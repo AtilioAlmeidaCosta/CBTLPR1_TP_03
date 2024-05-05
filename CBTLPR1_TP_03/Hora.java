@@ -129,4 +129,19 @@ public class Hora {
             }
         }
     }
+public static void main(String[] args) {
+        // Testando os construtores
+        Hora hora1 = new Hora(); // Construtor que pede entrada do usuario
+        System.out.println("Hora 1: " + hora1.getHora1());
+        
+        Hora hora2 = new Hora(); // Construtor com argumentos
+        System.out.println("Hora 2: " + hora2.getHora1());
+
+        // Testando os metodos de obtencao
+        System.out.println("Hora 1 (formato 12 horas): " + hora1.getHora2());
+        System.out.println("Hora 2 (formato 12 horas): " + hora2.getHora2());
+
+        System.out.println("Hora 1 em segundos: " + hora1.getSegundos());
+        System.out.println("Hora 2 em segundos: " + hora2.getSegundos());
+    }
 }
